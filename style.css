@@ -1,0 +1,690 @@
+/*Google fonts*/
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+ *{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+
+ }
+ * {
+    max-width: 100%;
+  }
+  
+*{
+   /* overflow-x: hidden;*/
+  }
+  
+
+ body{
+    background-color: rgb(132, 117, 98);
+   
+        overflow-x: hidden;
+     
+      
+ }
+ /*Color palette(VARIABLES)*/
+ :root {
+    --g-color:#e8c01e ;
+    --b-color: #dff300;
+    --r-color:#da6009;
+    --bg-color: #311602;
+    --text-color:white;
+}
+section{
+    padding:4.5rem 0 1.5rem;
+}
+img{
+    width: 600px;
+    position: relative;
+    top: 2px; /* Adjust this value to control the distance from the top */
+    right: 5px;
+    
+}
+body{
+    color:black;
+}
+header{
+    position: fixed;
+    width:100%;
+    top:0;
+    right:0;
+    z-index:1000;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background-color: var(--bg-color);
+    box-shadow: 0 8px 11px rgb(14 55 54 / 15%);
+    padding:20px 100px;
+    transition:0.5s;
+    
+}
+.profile{
+    display:flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    cursor:pointer;
+    color: azure;
+
+}
+.profile img{
+    width:40px;
+    height:40px;
+    object-fit:cover;
+    object-position:center;
+    border-radius: 50%;
+
+}
+.profile span{
+    font-size: 13px;
+    font-weight:500;
+    color: white;
+
+}
+.logo{
+    display:flex;
+    align-items:center;
+    font-size: 1.1rem;
+    font-weight:600;
+    color:var(--text-color);
+    column-gap: 0.5rem;
+}
+.logo .bx{
+    font-size: 50px;
+    color:var(--r-color);
+
+
+}
+.navbar{
+    display:flex;
+    column-gap: 0.5rem;
+
+}
+.navbar a{
+    font-size:1rem;
+    font-weight:500;
+    color:rgb(153, 91, 9);
+    padding: 0.5rem 1rem;
+
+
+}
+.header a{
+    font-size: 100px;
+}
+.navbar a:hover,
+.navbar .home-active{
+    background:var(--g-color);
+    border-radius:5rem;
+    color:var(--bg-color);
+    transition:background 0.5;
+
+}
+#menu-icon{
+    font-size:24px;
+    cursor: pointer;
+    z-index:10001;
+    display:none;
+
+}
+
+.home{
+    font-size: 300px;
+}
+.container{
+    position: relative;
+    width:100%;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    background: url(https://static.vecteezy.com/system/resources/previews/008/099/635/original/aesthetic-background-brown-coffee-beans-free-vector.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    overflow:hidden;
+}
+.container img{
+    width:400px;
+    position:relative;
+    bottom:-1000px;
+    right:200px;
+}
+.home-text{
+    padding:0 150px;
+    color: white;
+
+
+}
+.home-text span{
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--g-color);
+}
+.home-text h1{
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+
+}
+.button{
+    padding:0.6rem 1rem;
+    background: var(--g-color);
+    color: var(--bg-color);
+    font-weight: 400;
+    border-radius:5rem;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    column-gap: 0.5rem;
+    max-width:160px;
+}
+.button:hover{
+    background-color:orange;
+}
+.btn.bx{
+    padding: 4px;
+    background:var(--bg-color);
+    color: var(--text-color);
+    border-radius: 1rem;
+    font-size: 20px;
+    margin:auto;
+}
+.swiper.button.next{
+   
+  background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    margin-right: 20px;
+    font-size:50px;
+}
+.swiper-button-next::after{
+    display:none;
+
+}
+.swiper-button-prev{
+   color:var(--g-color);
+   background-repeat: no-repeat;
+    background-size:100% auto;
+    background-position: center;
+    margin-left:20px;
+   
+    font-size: 50px;
+   
+}
+.swiper-button-prev::after{
+display:none;
+
+}
+
+
+.swiper-button-next, .swiper-button-prev {
+    
+    color: #ffff12 !important; /* Change to the text color you want */
+    border-radius: 50%; /* Make the buttons circular (optional) */
+    width: 40px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    font-size: 50px; /* Adjust the font size as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.heading h1{
+    font-size: 3rem;
+    font-weight: 600;
+    color: black;
+    min-height: 5px;
+max-height: 500px;}
+.categories{
+    max-width: 1000px;
+    margin-left:auto;
+    margin-right: auto;
+    ;
+}
+
+
+
+ 
+  .categories-cont{
+    display:flex;
+    grid-template-columns: repeat(auto-fit,minmax(180px,auto));
+    gap:1rem;
+    margin-top:2rem;
+    gap: 1rem;
+   
+    padding:5px;
+    display: grid;
+    border-color: #311602;
+    border-style: doub;
+
+  }
+  .categories-cont{
+    display: block;
+    justify-content: space-between; /* Adjust alignment as needed */
+  }
+  
+  .categories-cont .box {
+    width:300px;
+    height: 400px;
+    background-color: rgb(191, 99, 34);
+    /* Optional margin for spacing between boxes */
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+  .categories-cont {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 2fr)); /* Adjust box size and responsiveness as needed */
+    gap: 5000px; /* Adjust spacing between boxes as needed */
+  }
+  
+  
+  
+  .categories-cont .box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 20px;
+    border-radius: 1rem;
+    color: azure;
+    align-items: center;
+  }*/
+ 
+  
+  .categories-cont  img{
+    
+    padding: 10px;
+    max-width: 10px;
+    
+    object-fit: contain;
+    object-position: center;
+    margin-right:
+    }
+
+    
+
+    
+ 
+
+
+
+
+ .categories-cont .box h2{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #311602;
+
+  }
+  .categories-cont .box h1{
+    font-style:calc(Poppins);
+    grid-gap: 20px;
+    max-height: max-content;
+  }
+  .categories-cont .box span{
+    
+    font-size: 1rem;
+    font-weight: 600;
+    color: #311602!important;
+    margin-bottom: 8rem;
+  }
+  
+  .box  .pop{
+    position: relative;
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    border-radius: 0.5rem;
+    background-image: url(data:image/jpeg;base64,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); /* Replace with your dessert image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.box .oop{
+    position: relative;
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border-radius: 0.5rem;
+    background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAIIAwwMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAAAAQIDB//EACoQAQADAAICAgEDAwUBAAAAAAEAAhESISIxQVFxYYGRAzKxEzNCUqFD/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/APHtsOr1AFnxeyNeXk9QA22r3ACmluxg7FqxVdSzB3rVgByqWgPDlT5ir08viT/itWA5HDsxlRKHF69wpwOTjDywx0gLNdN9yWLV+epbcX37h0TvqAeNnNyNtW2vZDxbGMbYv29QBjbx9kV0Xl6Y6bPG3cVXUt6gK4609xVwS38wG60cir15MCZ1tWXl4HL3HfHxeo04HLpgESpxeos1Q17Y7Ax6izVDXuAtyER0IeK4RbSx/wBYcbEBti2rHS6e41LeXqOm3j0kCZb7iFtvuIF15dhkB3tEY15ZbMgMttWAq6pb9mD0tUyKuqWwiu1FrmQId1S2SglNrmQZY8jI7rVx6gOmnaQ8q1Pkjq1O8JHSuHqBbcXHSRbFg+JbA+uoVEIBBt4psb5efqGpyMYLPPE6gAOXi+oq9pbPzkBllrA6paAqZrViqIj0wGa0Yq8q94MB2G1dI0aG4QbWrmR01d6gS3IqFeyVxDs1k8qgHqWwIPRAW5VzcwhKqcXti1kQzSE2xmDAcnmbmRnk2q/xHJ5eR1ABfavxAm2+z+Ijlb9JIGuW28q9Rx4vIgdtiZAcbLV6z1ACWsj7+IqcNwIpllOP4io0HrqAPKqPuO606NGALn1Bta5mkBhagyNrVDkdS8S1DCG2VBP3gLVFEhs8gSS1RNrKvYJANe/E7jltssZDTLCMchvjWAxrbTuKPKyJjAZda4/cGWUeoCm13jFfIdMYBpuemDLHruA7qetIwtQYFpXMjC1fiAsoethqIYdwqVK5v6xahg16+oBsmcjohqbtYtbsrY37Ya4lq+/iA5bbsjiluRG7bEyA42WrvXqBls76Il5v/WIF0tbMgOLp6jS1sNIBrZfZ9QBlrOdJFfHTNivG9nBGK+IiL+sAY1c0YHjV06+IDlXa9QKUyxueoEa7URhth5EZ4eOwu1BgW1fSPUWsLidxYfYsKLiZ+sCccdCXS1sTIy1baLG1tfEYAGt9/wDIMspmPxANbu6n+IrllzpgSu1H5JanKqn3Fdpo9klcRa6MC7xrjXT7kajUayjlcRY47U4v8QC4HIi1ehN/SG3iFhiw9NV/SAbHQkNUto7FrGhb3DVERU+oBatwSMa3U9Rpa2eoy1bd9kCNu/7f/Yha76YgVy1sPcA1t+kdNsq9wbVeXdYAB1r7PcVcEt6gxVq9wOaWe4DBqpuyDlXl/MoaLX5gscMt7IBPA426k5VzvT9oRKeL1CjU5e4FuW6x6izVz4Yvyr8+oWr+WBEa22Xq1uumPKtvuPFtg4wFdrftcfcHG1nN2NSzydPiDFWvsgKOCPcBtVq/MVcUtIHS1YDQrjqyp4+L7gcr3GJQKwIoBsti2GLkjYaBb3LYtXMdyAUc3ph2ttizVzelh2tjvawHjawGxjW6vZDjbB7g2ttt6gTlX6f4iVtXXuSBUG3i9wKXeW4xhvi9wWdy/r7gA8lo9+orb2Xz8wV7WqfiKu6WwYAMqtbSDtXl7lxCzXsgRp5dMBiVOORZqmfMjyrXrGPFqL0wFuQB8S24qfcX5V94wlVHTYB5VsKsYNtr79w2S3kaMYcvFBgBeTy9PzFQbLW3qB80tn6Qe1q7AlV3ylBBawPstFRKrV0gDOPk9yYldq6S1Rr5HcjpU4+oFUQ2S2gd9ErxtU3BYtyrnQhAPGyd9xZa2FixVz0bCpY5YnzAYNjGBS7y3Iam+L3+ka8vL1Anh9ySvHfZEC5ljj7gdslvUcWttPcVeVssZ+sAHG21ivlvL2QCK17PqALbp3AHKtVqmR1avfT8wHET2QZav0nuAdrXAkQsZL2V7NksDUR/MAqAPctgs6e4VOk0i1OxIBs8jfUNTlp8dxyeWWOozLaPcAW2+WPfqAxWqQPKyWCA4unr6gKumW9yVOI5LXHR6/WK7Wr8mwBjXvpk8q1+yWuNVepFSoBpAqVsHqSzYw+pbVLVH1DZrmhh7gLBZE9xuJyOoa7iftCvMLHTAcfI4psctulvUceNtrmwW5W8jIDD7JIaG+iIFxrYSN2yJkFeNt/zA87Z6gKjS2+5K5ffv5lNrvyQBcXMYA2tXrSMLV31Btao+oDauQJrWuZstqiEckr2SNdBGBbWwBNhp3o7C4BY7PmGvZx/zANtscgjMs22F22PUY1tofkgBL3xO/iKjVc9QJayBmRXaPrSBKpfesiviP1KZffhiu1ETSAAa7CtK4nUmFjfUq8aAmwI1EEltb0JDXajVYbeix+YC1VRrDbULnUWqmNf2httssZAcUsJAlrIgScWttP8yiWu9ZAn+n+kSNO2IGqPlJaIgP6f/KS3V3PqIgbr/tTD6kiB0f7Cc30fmIgdP6v9kwLyrEQNX/uPzJVf9SIgL/3kv9LvlEQJb+79paf7f7xEDL6m/wD5xEDmvVfzOn9X0xEDCuk1/U91iIEo+f7S3+PzEQMK69xEQP/Z); /* Replace with your dessert image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.box .vix{
+    position: relative;
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border-radius: 0.5rem;
+    background-image: url(data:image/jpeg;base64,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); /* Replace with your dessert image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.categories-cont .box .bx{
+    padding:5px;
+    background: #dff300;
+    color: var(--g-color);
+    border-radius: 5rem;
+    margin-top:2rem;
+    position:absolute;
+    bottom: 5%;
+    font-size: large;
+    margin-left: 10px;
+    width:50px;
+}
+.categories-cont .box .bx:hover{
+    background-color: #1f2109;
+}
+.categories-cont .box {
+    display: flex;
+    justify-content: space-between; /* Adjust alignment as needed */
+  }
+  
+  .box {
+    width: auto;
+    height: auto;
+    background-color: rgb(22, 15, 1);
+  }
+  
+
+
+.pop{
+    background: #da6009;
+}
+.items .box{
+    height: 500px;
+    width: 300px    ;
+}
+
+.items{
+   
+    margin-left:300px;
+    margin-right:300px;
+    padding:40px;
+    
+}
+.items-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,auto));
+    gap:1rem;
+    margin-top:2rem;
+
+}
+.items-container .box{
+    padding: 20px;
+    box-shadow:1px 2px 11px 4px rgb(14 55 54/ 15%);
+    border-radius:0.5rem;
+    position:relative;
+    background-color: burlywood;
+}
+.items-container .box img{
+    width: 100%;
+    height:300px;
+    object-fit: contain;
+    object-position: center;
+}
+.items-container .box span{
+    font-weight: 500;
+    font-size: 13px;
+}
+.items-container .box h2{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    color: darkred;
+}
+.items-container .box .price{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top:0.5rem;
+    color:rgb(208, 21, 21)
+}
+.items-container .box .bx{
+    position:absolute;
+    right:0;
+    bottom:0;
+    padding:10px;
+    background:#da6009;
+    font-size: 20px;
+    border-radius:0.5rem 0 0.5rem;
+}
+.items-container .box .bx:hover{
+    background: var(--b-color);
+    transition: 0.2s all linear;
+}
+.items .heading .button :hover{
+    background: var(--r-color);
+    transition: 0.2s all linear;
+}
+
+.about{
+    max-width: 1500px;
+    max-height: 1500px;
+    margin-left: 400px;
+    margin-right: 400px;
+    display:flex;
+    grid-template-columns: repeat(auto-fit,minmax(21rem,auto));
+    align-items: center;
+    gap: 5rem;
+    ;
+
+}
+
+.about{
+    width: 50%;
+    height: 100%;
+}
+.about-text span{
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--bg-color);
+    font-size: 30px;
+}
+.about {
+    text-align: center; /* Optional: Center the image horizontally within the container */
+}
+
+.about img {
+    margin-right: auto;
+    display: absolute
+    ; 
+    height: 300px;
+    border-color: #311602;
+    border-width: 10px;
+    border-style: solid;/* Move the image to the right by setting margin-left to auto */
+}
+
+
+.about-text{
+    margin:1rem 0 1rem;
+    font-size: 20px;
+    height: 400px;
+    width: 600px;
+}
+.Customer h2 {
+    text-align: center; /* This centers the text horizontally */
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.Customer-cont {
+    display: flex;
+    place-items: center;
+
+    
+  }
+  
+.Customer-cont {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Horizontally space the boxes evenly */
+    align-items: center; /* Vertically align the boxes' content */
+  }
+  .Customer-cont {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Create columns with a minimum width of 300px */
+    gap: 30px; /* Add some gap between the columns */
+    justify-items: center; /* Horizontally center the boxes */
+    align-items: center; /* Vertically center the boxes */
+  }
+  .Customer-cont .box {
+    
+    padding: 10px;
+    box-shadow: 1px 2px 11px 4px rgb(14 55 54/15%);
+    border-radius: 0.5rem;
+    border-bottom: 7px solid var(--r-color);
+   transition: transform 0.2s linear; /* Move transition property here */
+    background-color: #e2e9b8;
+}
+.Customer-cont .box:hover {
+    transform: translateX(10px); /* Corrected translate property */
+}
+.Customer-cont .box{
+    height: 500px;
+    width: 300px    ;
+}
+.Customer-cont {
+    
+    justify-content: center; /* Horizontally center the boxes */
+    align-items: center; /* Vertically center the boxes */
+
+  }
+  .Customer-cont {
+    display: grid;
+    place-items: center; /* Center both horizontally and vertically */
+  }
+
+  .Customer-cont{
+   
+    margin-left:400px;
+    margin-right:400px;
+    align-items: center;
+    position: relative;;
+  }
+  
+  
+.Customer {
+    max-width: 968px;
+    margin: 0 auto; /* Simplified margin setting */
+    padding: 20px; /* Add some padding for spacing */
+    box-sizing: border-box; /* Include padding in the max-width calculation */}
+.Customer-cont h2{
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    color: darkred;
+}
+.review-profile{
+    display: flex;
+    align-items: center;
+    margin-top: 10rem;
+    column-gap: 0.5rem;
+    grid-template-columns:  repeat(auto-fit,minmax(180px,auto));
+    
+
+
+}
+.review-profile img{
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 10%;
+}
+
+
+.footer{
+    max-width: 90%;
+    margin-left:auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns:  repeat(auto-fit,minmax(200px,auto));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    background: white;
+    border-radius: 0.5rem;
+    padding: 20px;
+}
+.footer-box p{
+    font-size: 0.938rem;
+    margin:auto;
+
+}
+.social{
+    display:flex;
+    align-items: center;
+    column-gap: 0.5rem;
+
+}
+.social .bx {
+    padding:10px;
+    background:var(--r-color);
+    color:var(--bg-color);
+    border-radius: 5rem;
+    font-size: 20px;
+}
+.social .bx:hover{
+    background:var(--g-color);
+    color: var(--r-color);
+    transition: 0.2s all linear;
+}
+.footer-box h2{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+
+}
+.footer-box a{
+    color:var(--bg-color);
+
+}
+.footer-box a:hover{
+    color:orange;
+}
+.footer-box form{
+    border-bottom:1px solid var(--text-color);
+    padding:10px;
+    display:flex;
+    align-items:center;
+    column-gap: 0.5rem;
+    color: antiquewhite;
+}
+.footer-box form input{
+    background: transparent;
+    border:none;
+    outline:none
+}
+.footer-box form .bx{
+    font-size: 20px;
+    color:orangered;
+    cursor: pointer;
+}
+.footer-box .lol {
+    background-color: rgb(224, 218, 210);
+}
+.footer-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the left */
+    margin-right: 20px; /* Add some space between the boxes */
+}
+
+.footer-box  {
+    display: flex; /* Display links as block elements to put them on separate lines */
+    margin-bottom: 5px; /* Add space between links */
+}
+.copyright span{
+    background-color: aliceblue;
+}
